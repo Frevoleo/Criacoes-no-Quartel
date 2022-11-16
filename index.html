@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!--
+Versão: Beta 7.3
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="author" content="www.allvz.com.br">
+  <title>Ficha Catalográfica</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="cutter.js"></script>
+</head>
+<style>
+
+  .title {
+    text-align: right;
+    text-transform: uppercase;color: red;
+    font-weight: bold;
+    font-family: 'Baloo 2', cursive;
+  }
+
+  .title2 {
+    text-align: right;
+    font-size: 45px;
+    padding-top: 40px;
+    text-transform: uppercase;color: #ffffff;
+    font-family: 'Baloo 2', cursive;
+  }
+  
+  .modalBtn {
+    text-align: right;
+    text-transform: uppercase;color: red;
+    font-weight: bold;
+    font-family: 'Baloo 2', cursive;
+  }
+  
+  .text {
+      margin-top: 0;
+      font-size: 1.1em;
+      color: rgb(255, 255, 255);
+  }
+  .aviso {
+      margin-top: 0;
+      font-size: 1.1em;
+      color:#000;
+      font-size: 17px;
+  }
+  
+  .modal {
+      display: none; 
+      position: fixed;
+      z-index: 1; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.493);
+      scrollbar-width: none;
+  }
+  
+  .modal .content {
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(9.8px);
+      -webkit-backdrop-filter: blur(9.8px);
+      border: 1px solid rgba(255, 255, 255, 0.19);
+      margin: 15% auto; 
+      padding: 20px;
+      border-radius: 15px;
+      width: 45%; 
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Baloo 2', cursive;
+      color: var(--title);
+      
+  }
+  
+  </style>
+<body>
+  <div class="contact-clean">
+    <form id="meuform" action="pdfdownloader/" target="_blank" method="post">
+      <input type="hidden" name="cutter" id="cutter" value="" />
+      <h2 class="text-center">Ficha Catalográfica</h2>
+      
+      <div class="modal">
+        <div class="content">
+          <h1 class="title2">Instruções de uso</h1>
+          <p class="aviso">Você pode fechar esta janela clicando fora desta área.</p><br /><br /><br /><br />
+          <p class="text" style="text-align: justify;">
+             <p class="text" style="margin-top:0pt; margin-bottom:8pt; text-align:center; line-height:108%;">
+            <strong>
+                <span>&nbsp;
+                </span>
+            </strong>
+        </p>
+        <p class="text" style="margin-top:0pt; margin-bottom:8pt; line-height:108%;">
+            <span style="width:35.4pt; display:inline-block;">&nbsp;</span>
+            <span> A ficha catalográfica é um conjunto ordenado de dados que traz a
+                descrição física e temática de uma obra. É um elemento obrigatório em todas as publicações monográficas,
+                conforme estabelecido pela Lei Federal 10.753/03, também conhecida como a Lei do Livro, e tem os padrões
+                regulados pela norma técnica NBR 14724. Deve ser disposta no verso da folha de rosto, centralizada, na parte
+                inferior da folha e ter o tamanho padrão de 7,5cm x 12,5 cm.</span>
+        </p>
+        <p class="text" style="margin-top:0pt; margin-bottom:8pt; text-indent:35.4pt; line-height:108%;">
+            <span> O Sistema de Geração de Ficha Catalográfica da Escola de
+                Aperfeiçoamento de Oficiais está programado para atender aos trabalhos de todo o corpo discente da escola. Ele
+                produz uma ficha a partir do preenchimento deste formulário&nbsp;</span>
+            <em>
+                <span>on-line</span>
+            </em>
+            <span>.&nbsp;</span>
+        </p>
+        <p class="text" style="margin-top:0pt; margin-bottom:8pt; line-height:108%;">
+            <span style="width:35.4pt; display:inline-block;">&nbsp;</span>
+            <span> Os dados serão apresentados na ficha conforme informados pelo usuário.
+                Caso você tenha alguma dúvida, consulte a Biblioteca da EsAO.</span>
+        </p>
+        <p class="text" style="margin-top:0pt; margin-bottom:8pt; line-height:108%;">
+            <span>&nbsp;</span>
+        </p>
+        <ol style="margin:0pt; padding-left:0pt;" type="1">
+            <li class="text" style="margin-left:32pt; line-height:108%; padding-left:4pt; ">
+                <strong>Autor:</strong> é o responsável direto pela geração intelectual e redação da obra. (TCC/Dissertação) A
+                entrada desse dado no formulário é feita em dois campos:
+            </li>
+        </ol>
+        <ul style="margin:0pt; padding-left:0pt;" type="disc">
+            <li class="text" style="margin-left:68.43pt; line-height:108%; padding-left:3.57pt; font-family:serif;">
+                <strong>
+                    <span>✓ NOME:&nbsp;</span>
+                </strong>
+                <span>digite seu primeiro nome e nomes/sobrenomes intermediários (se
+                    existirem)</span>
+            </li>
+            <li class="text" style="margin-left:68.43pt; margin-bottom:8pt; line-height:108%; padding-left:3.57pt; font-family:serif;">
+                <strong>
+                    <span>✓ SOBRENOME:</span> </strong>
+                <span>&nbsp;digite seu último sobrenome de acordo com os exemplos
+                    abaixo.</span>
+            </li>
+        </ul>
+        <p class="text" style="margin-top:0pt; margin-bottom:8pt; line-height:108%;"><span>Exemplos de sobrenome simples:
+            Luís Alves de Lima e Silva (Luís Alves de Lima e = nome; Silva = sobrenome)</span>
+      </p>
+        <p class="text" style="margin-top:0pt; margin-bottom:8pt; line-height:108%;">
+            <span>Grau de Parentesco: Ex. 1 - Manuel Luís Osório Júnior (Manuel Luís = nome; Osório Júnior = sobrenome)
+                Ex. 2 - Manuel Luís Osório Filho (Manuel Luís = nome; Osório Filho = sobrenome) Ex. 3 - Manuel Luís Osório Neto
+                (Manuel Luís = nome; Osório Neto = sobrenome)</span>
+        </p>
+        <p class="text" style="margin-top:0pt; margin-bottom:8pt; line-height:108%;">
+            <span>Lugar, expressão: Emílio Mallet do Espírito Santo (Emílio Mallet do = nome; Espírito Santo =
+                sobrenome). Humberto de Alencar Castello Branco (Humberto de Alencar = nome; Castello Branco = sobrenome)</span>
+        </p>
+        <p class="text" style="margin-top:0pt; margin-bottom:8pt; line-height:108%;">
+            <span>Sobrenome ligados por hífen: Anna Guerra-Peixe (Anna = nome; Guerra-Peixe = sobrenome)</span>
+        </p>
+        <p class="text" style="margin-top:0pt; margin-bottom:8pt; line-height:108%;">
+            <span>Sobrenome para sobrenome estrangeiro (países hispânicos):</span>
+        </p>
+        <p class="text" style="margin-top:0pt; margin-bottom:8pt; line-height:108%;">
+            <span>María de la Concepción Gutierrez Peñalba (Maria de la Concepción = nome; Gutierrez Peñalba =
+                sobrenome)</span>
+        </p>
+        <p class="text" style="margin-top:0pt; margin-bottom:8pt; line-height:108%;">
+            <span>&nbsp;</span>
+        </p>
+        <ol start="2" style="margin:0pt; padding-left:0pt;" type="1">
+            <li class="text" style="margin-left:32pt; line-height:108%; padding-left:4pt;">
+                <strong>Título do trabalho: </strong>registre-o por completo. Se houver um subtítulo, este deverá ser colocado
+                no campo subtítulo, onde após gerar a ficha o mesmo será separado do título pelo sinal de dois pontos. Utilize
+                letras somente no início do título ou quando tratar-se de nome próprio ou siglas.
+            </li>
+        </ol>
+        <p class="text" style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt; line-height:108%;">
+            <span>Exemplo: A vida de Luís Alves de Lima e Silva: um estudo sobre os feitos do Duque de Caxias no Rio de
+                Janeiro.</span>
+        </p>
+        <p class="text" style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt; line-height:108%;">
+            <span>&nbsp;</span>
+        </p>
+        <ol start="3" style="margin:0pt; padding-left:0pt;" type="1">
+            <li class="text" style="margin-left:32pt; line-height:108%; padding-left:4pt;">
+                <strong>Código Cutter: </strong>No campo Código Cutter do formulário Clique em <em>GERAR</em>, onde será
+                redirecionado a outra página, e preencher apenas o campo
+                <em>ENTRADA PRINCIPAL </em>inserir o sobrenome e clicar no botão azul <em>GERAR CÓDIGO CUTTER</em> conforme
+                imagem abaixo, Copiar o código gerado e colar no formulário.
+            </li>
+        </ol>
+        <p class="text" style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt; line-height:108%;">
+            <span>&nbsp;</span>
+        </p>
+        <p class="text" style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt; text-align:center; line-height:108%;">
+            <img src="assets/images/instrucoes-de-uso/1666273738_instrues-para-preenchimento-de-ficha-catalografica-esao-1.png"
+                alt="" width="290" height="362">
+        </p>
+        <p class="text" style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt; line-height:108%;">
+          <span>&nbsp;</span>
+      </p>
+        <ol start="4" style="margin:0pt; padding-left:0pt;" type="1">
+            <li class="text" style="margin-left:32pt; line-height:108%; padding-left:4pt;">
+                <strong>Nome completo do orientador:</strong> digite o nome completo do seu orientador;
+            </li>
+            <li class="text" style="margin-left:32pt; line-height:108%; padding-left:4pt;">
+                <strong>Quantidade de folhas, páginas ou volumes:</strong> digite a quantidade de folhas que seu trabalho
+                possui, não conte capa.
+                possui, n&atilde;o conte capa.
+            </li>
+            <li class="text" style="margin-left:32pt; line-height:108%; padding-left:4pt;">
+                <strong>Ilustração: </strong>informe se o seu trabalho possui ilustrações, caso positivo informe se são
+                coloridas ou preto e branco;
+            </li>
+            <li class="text" style="margin-left:32pt; line-height:108%; padding-left:4pt;">
+                <strong>Palavras chave:</strong> Digite as palavras chave correspondente ao seu trabalho, com o mínimo de 3 e o
+                máximo de 5 palavras. Registre palavras ou expressões que representem o conteúdo do seu trabalho, em ordem
+                decrescente de importância (do mais importante para o menos importante). Use palavras-chave localizadas após o
+                resumo do trabalho.
+            </li>
+            <li class="text" style="margin-left:32pt; margin-bottom:8pt; line-height:108%; padding-left:4pt;">
+                <strong>Conclusão:</strong> após o preenchimento de todos os campos a ficha será gerada no formato
+                <em> .PDF</em> e estará disponível em uma outra aba do seu navegador para donwloading ou impressão.
+            </li>
+        </ol></p>
+        </div>
+      </div>
+
+      <p class="modalBtn"><i class="bi bi-info-circle"></i> <a style="color: red;">Instruções de uso</a></p>
+      
+      
+      <div class="form-group">
+        <legend>
+          <span class="number">1</span> Dados Pessoais 
+        </legend>
+        <div class="form-group flex-column"></div>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Nome completo</span>
+          </div>
+          <input type="text"  class="form-control" id="name" name="name" placeholder="Nome"  required>
+          <input type="text" class="form-control" id="sname" name="sname" placeholder="Último nome" required>
+        </div>
+        <div class="form-group flex-column"></div>
+        <legend>
+          <span class="number">2</span> Dados do trabalho
+        </legend>
+        <div class="form-group flex-column"></div>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Título do trabalho" name="ttrabalho"  required>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" style="text-transform: lowercase" placeholder="Subtítulo do trabalho" name="strabalho" >
+          </div>
+        </div>
+        <div class="form-group flex-column"></div>
+        <div class="form-group flex-column"></div>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Nome do orientador         </span>
+          </div>
+          <input type="text" class="form-control" id="orientador" name="orientador"  required>
+
+          <span class="input-group-text">
+            <input type="radio" name="tcmest" value="tcc"/>TCC  <br />
+            <input type="radio" name="tcmest" value="mestrado"/> Mestrado<br />
+          </span>
+        </div>
+
+        <div class="form-group flex-column"></div>
+        
+        <div class="form-group flex-column"></div>
+        
+        <div class="form-group flex-column"></div>
+        <div class="row">
+          <div class="col">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Ano de publicação</label>
+              </div>
+              <select class="custom-select" id="inputGroupSelect01" name="ano" required>
+                                <option value="2023">2023</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="">Número de folhas              </span>
+              </div>
+              <input type="number" pattern="[0-9]*" class="form-control" placeholder="Ex.: 70" name="nfolha" min="1" required>
+            </div>
+          </div>
+          <div class="col">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Ilustração</label>
+              </div>
+              <select class="custom-select" id="inputGroupSelect01" name="ilustracao"  required>
+                <option selected>Selecione</option>
+                <option value=".">Não possui</option>
+                <option value=". : il. color.">Coloridas</option>
+                <option value=". : il.">Preto e Branco</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-group flex-column"></div>
+        <legend><span class="number">3</span> Palavras-chave</legend>
+        <div class="form-group flex-column"></div>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="">Assuntos (mín. 1, máx. 5)</span>
+          </div>
+          <input type="text" class="form-control" placeholder="(Ex.: Infantaria)" name="keyd1" required>
+          <input type="text" class="form-control" placeholder="(Ex.: Cavalaria)" name="keyd2">
+          <input type="text" class="form-control" placeholder="(Ex.: Amazônia)" name="keyd3">
+        </div>
+        <div class="form-group flex-column"></div>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="(Ex.: Veículos de Combate)" name="keyd4">
+          <input type="text" class="form-control" placeholder="(Ex.: Exército Brasileiro)" name="keyd5">
+        </div>
+        <div class="form-group flex-column"></div>
+      </div>
+      <div class="form-group"><button id="btn_submit" class="btn btn-primary btn-lg btn-block" type="submit" style="text-align: center;"
+          name="submit">Gerar ficha catalográfica</button></div>
+          <br/>
+          <center style="color:#c2c2c2;">Desenvolvido por:<a style="text-align:center; color:#c2c2c2;" href="https://allvz.com.br" target="_blank" > <strong>Sd Bruno</strong> Ferreira <strong>Alves</strong></a> e <a style="text-align:center; color:#c2c2c2;" href="https://github.com/Frevoleo" target="_blank" ><strong>Sd</strong> Flávio Leonel <strong>Marynowski</strong></a>
+          </center> </form>
+  </div>
+
+</body>
+<script>
+
+const switchModal = () => {
+  const modal = document.querySelector('.modal')
+  const actualStyle = modal.style.display
+  if(actualStyle == 'block') {
+    modal.style.display = 'none'
+  }
+  else {
+    modal.style.display = 'block'
+  }
+}
+
+const btn = document.querySelector('.modalBtn')
+btn.addEventListener('click', switchModal)
+
+window.onclick = function(event) {
+    const modal = document.querySelector('.modal')
+  if (event.target == modal) {
+    switchModal()
+  }
+}
+
+</script>
+</html>
