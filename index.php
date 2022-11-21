@@ -56,8 +56,6 @@ if (isset($_POST['submit'])) {
 	$keyfour = null;
 	$keyfive = null;
 	switch($keydot){
-	case 1:
-		break;
 	case 2:
 		$keytwo = '2.' . $keyd2 . $keyd3 . $keyd4 . $keyd5;
 		break;
